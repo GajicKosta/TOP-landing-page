@@ -1,0 +1,230 @@
+:root {
+  /* Colors */
+  --clr-dark: #1f2937; /* * hero/footer | Infprmation text | Quote text */
+  --clr-light: #f9faf8; /* * Hero main text | header logo text*/
+  --clr-light-2: #e5e7eb; /* * Hero secondary text | quote sectuon background*/
+  --clr-accent: #3882f6; /* * Header button */
+
+  /* font-sizes */
+  --fs-900: 3rem; /* * Hero main text */
+  --fs-800: 2.25rem; /* * Information text | Qupte text */
+  --fs-700: 1.5rem; /* * Header logo text */
+  --fs-600: 1.125; /* * Hero secondary text */
+  --fs-500: 1rem
+}
+
+/* * ---- Reset ---- * */
+*,
+*::before,
+*::after {
+  margin: 0;
+padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* * Utility classes */
+
+/* * -------------------------- */
+/* * ---- Utility Classes ---- */
+/* * ------------------------ */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 75rem;
+}
+
+/* * ---- colors ---- * */
+
+.bg-dark { background-color: var(--clr-dark); }
+.bg-accent { background-color: var(--clr-accent); }
+.text-dark { color: var(--clr-dark); }
+.text-light { color: var(--clr-light); }
+.text-light-2 { color: var(--clr-light-2); }
+
+
+/* typography */
+
+.uppercase { text-transform: uppercase; }
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+
+.fw-bold { font-weight: 900; }
+.fw-tin { font-weight: 100; }
+.fs-italic { font-style: italic; }
+.text-center { text-align: center; }
+
+/* * ------------------ */
+/* * ---- General ---- */
+/* * -------- ------- */
+
+body {
+  font-family: 'Roboto', san-serif;
+  font-size: var(--fs-400);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.section {
+  padding-block: 8rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link, 
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  padding: .25em 1.2rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* * ------------------ */
+/* * ---- Header --==- */
+/* * -------- ------- */
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.nav ul {
+  --gap: 1.5rem;
+}
+
+.hero {
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 6rem 8rem;
+}
+
+.hero-content {
+  max-width: 400px;
+}
+
+.hero h1 {
+  line-height: 1;
+}
+
+.hero p {
+  letter-spacing: .5px;
+}
+
+.hero-btn {
+  margin-top: 2rem;
+}
+
+/* * ----------------------- */
+/* * ---- Section one ----- */
+/* * -------- ------------ */
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-block: 3rem 5rem;
+}
+
+.card {
+  text-align: center;
+  flex-basis: 150px;
+}
+
+.card img {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+/* * ----------------------- */
+/* * ---- Section two ----- */
+/* * -------- ------------ */
+
+.quote-container {
+  margin-inline: auto;
+  max-width: 800px;
+  line-height: 1.3;
+}
+
+.quote-sign {
+  text-align: end;
+}
+
+/* * ----------------------- */
+/* * ---- Section tree ----- */
+/* * -------- ------------ */
+
+.action-container {
+  max-width: 800px;
+  padding-block: 3rem;
+  margin-inline: auto;
+
+  justify-content: space-around;
+}
+
+.action-container p.fw-bold {
+  text-align: start;
+}
+
+.action-btn {
+  border: 1px solid white;
+}
+
+.footer {
+  padding-block: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
